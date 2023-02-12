@@ -1,8 +1,8 @@
 import vuetify from "vite-plugin-vuetify";
 
 // PWA Config
-const title = "Vuetify 3 + Nuxt 3 Starter";
-const shortTitle = "Vuetify 3 + Nuxt 3 Starter";
+const title = "Forrester Cohen | Hoome Page";
+const shortTitle = "Forrester Cohen Advice Professionals";
 const description = "Template to get you up and running with Nuxt 3 & Vuetify 3";
 const image = "https://vuetify3nuxt3starter.behonbaker.com/starter.png";
 const url = "https://vuetify3nuxt3starter.behonbaker.com/";
@@ -47,6 +47,10 @@ export default defineNuxtConfig({
 					href: url,
 				},
 			],
+			script: [
+				{ src: 'https://unpkg.com/cloudinary-core@latest/cloudinary-core-shrinkwrap.min.js' },
+				{ src: 'https://unpkg.com/cloudinary-video-player@1.5.9/dist/cld-video-player.min.js' },
+			  ],
 			meta: [
 				{
 					hid: "description",
@@ -109,7 +113,7 @@ export default defineNuxtConfig({
 	pwa: {
 		meta: {
 			name: shortTitle,
-			author: "Behon Baker",
+			author: "John Moore",
 			theme_color: "#4f46e5",
 			description: description,
 		},
